@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #4B371C;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 80%;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #678826;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.logo1 {
+    color: #80471C;
+    font-family: Impact;
+    font-size: 150%;
+    font-weight: lighter;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 7.5%;
+}
+
+.logo1:hover {
+    transition: 0.5s;
+    color: #88D840;
+    font-size: 200%;
+}
+
+
+.banner {
+    background-image: url(../images/atf-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.banner_text {
+    line-height: 190%;
+    position: relative;
+    width: 100%;
+    top: 25%;
+    margin-left: 7.5%;
+}
+
+.banner_text #uni-fresh {
+    color: #231709;
+    font-family: Impact;
+    font-size: 150%;
+    font-weight: lighter;
+}
+
+.banner_text #taste {
+    color: #B2FC38;
+    font-family: Impact;
+    font-size: 150%;
+    font-weight: lighter;
+}
+
+.banner_text p {
+    color: #371D10;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+#btn1 a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+#btn1 {
+    padding: 10px;
+    background: none;
+    color: #466D1D;
+    border: 2px solid #466D1D;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn1:hover {
+    background: #466D1D;
+    transition: 0.5s;
+}
