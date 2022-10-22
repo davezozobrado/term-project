@@ -1,187 +1,205 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border: none;
-    position: relative;
 }
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+
 }
-/*First Part*/
-nav{
-    overflow: auto;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.h1{
-    width: 50%;
-    float: left;
-    padding-left: 100px;
-    font-size: 25px;
-}
-.al1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
-    text-decoration: none;
-}
-.a{
-    color: black;
-    text-decoration: none;
-}
-.ul{
-    width: 50%;
-    float: right;
-    text-align: right;
-    padding-right: 100px;
-}
-.li{
+
+.navbar ul li {
     display: inline-block;
-    font-weight: bold;
-    font-size: 12px;
+    margin: 0 10px;
+    position: relative;
 }
 
-
-.Backgroundimage1{
-    clear: both;
-    background-image: url(../images/atf-image.jpg);
-    background-size: 100%;
-    background-position: center;
-    height: 500px;
-    width: 1465px;
-    background-repeat: no-repeat;
-}
-.h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-left: 100px;
-    font-size: 50px;
-    position: relative;
-    display: block;
-    top: 100px;
-    text-transform: uppercase;
-    opacity: 70%;
-}
-.Backgroundimage1 span{
-    position: relative;
-    text-transform: uppercase;
-    padding-left: 100px;
-    font-size: 50px;
-    color: limegreen;
-    top: -5px;
-}
-.p1{
-    padding-left: 100px;
-    position: relative;
-    top: 90px;
-    font-weight: 0;
-    opacity: 70%;
-    font-style: italic;
-}
-.al2{
-    top: 115px;
-    position: relative;
-    background-color: black;
+.navbar ul li a {
     text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px;
-    margin-left: 100px;
+    color: #4B371C;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 80%;
 }
-/*Merchandise Part*/
-.Backgroundimage2{
-    margin-top: 50px;
-    margin-left: 100px;
-    float: left;
-    background-image: url(../images/merchandise1.jpg);
-    background-size: 100%;
-    height: 350px;
-    width: 635px;
-    background-repeat: no-repeat;
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #678826;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
 }
-.Backgroundimage3{
-    margin-top: 50px;
-    margin-right: 100px;
-    float: right;
-    background-image: url(../images/merchandise2.jpg);
-    background-size: 100%;
-    height: 350px;
-    width: 635px;
-    background-repeat: no-repeat;
+
+.navbar ul li:hover::after {
+    width: 100%;
 }
-.h3{
-    top: 75px;
-    padding-left: 50px;
-    font-size: none;
+
+.logo1 {
+    color: #80471C;
+    font-family: Impact;
+    font-size: 150%;
+    font-weight: lighter;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 7.5%;
+}
+
+.logo1:hover {
+    transition: 0.5s;
+    color: #88D840;
+    font-size: 200%;
+}
+
+
+.banner {
+    background-image: url(../images/atf-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.banner_text {
+    line-height: 190%;
     position: relative;
-    display: flex;
-    text-transform: uppercase;
-    color: white;
+    width: 100%;
+    top: 25%;
+    margin-left: 7.5%;
 }
-.al3{
-    top: 100px;
-    padding-left: 50px;
-    font-size: smaller;
-    position: relative;
-    display: flex;
-    text-transform: uppercase;
-    color: white;
+
+.banner_text #uni-fresh {
+    color: #231709;
+    font-family: Impact;
+    font-size: 150%;
+    font-weight: lighter;
 }
-.h3--2{
-    top: 75px;
-    padding-left: 50px;
-    font-size: none;
-    position: relative;
-    display: flex;
-    text-transform: uppercase;
-    color: white;
+
+.banner_text #taste {
+    color: #B2FC38;
+    font-family: Impact;
+    font-size: 150%;
+    font-weight: lighter;
 }
-.al4{
-    top: 100px;
-    padding-left: 50px;
-    font-size: smaller;
-    position: relative;
-    display: flex;
-    text-transform: uppercase;
-    color: white;
-}
-.hd2{
-    padding-top: 250px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.p2{
-    text-align: center;
+
+.banner_text p {
+    color: #371D10;
+    font-family: sans-serif;
     font-style: italic;
-    padding-top: 150px;
-    padding-bottom: 0;
-    margin: 0;
-    color: rgb(185, 90, 0);
-    opacity: 70%;
-    font-family: 'Times New Roman', Times, serif;
 }
-.h2-2{
+
+#btn1 a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+#btn1 {
+    padding: 10px;
+    background: none;
+    color: #466D1D;
+    border: 2px solid #466D1D;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 7.5%;
+}
+
+#btn1:hover {
+    background: #466D1D;
+    transition: 0.5s;
+}
+
+.ads p a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 5%;
+}
+
+.ads h3 {
+    color: white;
+    font-family: Impact;
+    font-weight: lighter;
+}
+
+.ads {
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: inline-block;
+}
+
+.adsbox1 {
+    background-image: url(../images/merchandise1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 50%;
+    float: left
+}
+
+.adsbox1_text {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.adsbox2 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/merchandise2.jpg);
+    background-position: center;
+    height: 50vh;
+    width: 50%;
+    float: right
+}
+
+.adsbox2_text {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+
+.title1 {
+    padding-top: 250px;
+}
+
+.title1 p {
+    color: #371D10;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 20%;
+}
+
+.title1 h2 {
     text-align: center;
     text-transform: uppercase;
-    padding-top: 0;
     margin-top: 5px;
     margin-left: 400px;
     margin-right: 400px;
-    padding-bottom: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Impact;
+    font-weight: lighter;
+    font-size: 100%;
 }
-hr{
-    text-align: center;
-    margin-top: 15px;
-    margin-left: 680px;
-    margin-right: 680px;
-    margin-bottom: 20px;
-    border-top: solid rgb(185, 90, 0);
-    opacity: 70%;
-}
+
 .columns{
     float: left;
-    padding-inline: 0px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -224,7 +242,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 100px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -234,7 +251,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -244,7 +260,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -254,14 +269,12 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 .columns .p3{
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 100px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -272,7 +285,6 @@ hr{
 }
 .columns .p4{
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 00px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -283,7 +295,6 @@ hr{
 }
 .columns .p5{
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 00px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -294,7 +305,6 @@ hr{
 }
 .columns .p6{
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 00px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -305,7 +315,6 @@ hr{
 }
 .columns .p3-1{
     float:inline-end;
-    padding-inline: 0px;
     padding-left: 100px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -314,7 +323,6 @@ hr{
 }
 .columns .p4-2{
     float:inline-end;
-    padding-inline: 0px;
     padding-left: 00px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -323,7 +331,6 @@ hr{
 }
 .columns .p5-3{
     float:inline-end;
-    padding-inline: 0px;
     padding-left: 00px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -332,7 +339,6 @@ hr{
 }
 .columns .p6-4{
     float:inline-end;
-    padding-inline: 0px;
     padding-right: 00px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -341,7 +347,6 @@ hr{
 }
 .columns1 {
     float: left;
-    padding-inline: 0px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -384,7 +389,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 100px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -394,7 +398,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -403,7 +406,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -412,13 +414,11 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 .columns1 .p7{
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 100px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -429,7 +429,6 @@ hr{
 }
 .columns1 .p8{
     float: inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 2px;
@@ -439,7 +438,6 @@ hr{
 }
 .columns1 .p9{
     float: inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 2px;
@@ -449,7 +447,6 @@ hr{
 }
 .columns1 .p10{
     float:inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 2px;
@@ -459,7 +456,6 @@ hr{
 }
 .columns1 .p7-5{
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 100px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -468,7 +464,6 @@ hr{
 }
 .columns1 .p8-6{
     float: inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 0px;
@@ -476,7 +471,6 @@ hr{
 }
 .columns1 .p9-7{
     float: inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 0px;
@@ -484,7 +478,6 @@ hr{
 }
 .columns1 .p10-8{
     float: inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 0px;
@@ -541,6 +534,7 @@ hr{
     padding-bottom: 0;
     margin-top: 80px;
     color: rgb(185, 90, 0);
+    font-family: sans-serif;
 }
 .Merchantsales h2{
     text-align: center;
@@ -550,7 +544,8 @@ hr{
     margin-left: 400px;
     margin-right: 400px;
     padding-bottom: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Impact;
+    font-weight: lighter;
 }
 .hr2{
     margin-top: 15px;
@@ -562,7 +557,6 @@ hr{
 /* AREA OF PRODUCTS PART */
 .columns2{
     float: left;
-    padding-inline: 0px;
     padding-left: 2px;
     padding-right: 2px;
 }
@@ -605,7 +599,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 100px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -615,7 +608,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -624,7 +616,6 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -633,13 +624,11 @@ hr{
     margin-top: 0;
     font-size: 90%;
     float: inline-end;
-    padding-inline: 0px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 .columns2 .p11{
     float: inline-end;
-    padding-inline: 0px;
     padding-left: 100px;
     opacity: 70%;
     color: rgb(185, 90, 0);
@@ -650,7 +639,6 @@ hr{
 }
 .columns2 .p12{
     float: inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 2px;
@@ -660,7 +648,6 @@ hr{
 }
 .columns2 .p13{
     float: inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 2px;
@@ -670,7 +657,6 @@ hr{
 }
 .columns2 .p14{
     float: inline-end;
-    padding-inline: 0px;
     opacity: 70%;
     color: rgb(185, 90, 0);
     padding-top: 2px;
@@ -684,12 +670,15 @@ hr{
     padding-left: 50px;
     padding-top: 70px;
     padding-bottom: 20px;
+    font-family: Impact;
+    font-weight: lighter;
 }
 .thebox a{
     color: rgb(255, 255, 255);
     font-size: 15px;
     text-transform: uppercase;
     padding-left: 50px;
+    font-family: sans-serif;
 }
 .boxe1{
     height: 250px;
@@ -753,6 +742,9 @@ hr{
     text-align: center;
     padding-top: 50px;
     text-transform: uppercase;
+    font-family: Impact;
+    font-weight: lighter;
+
 }
 .reserform{
     background-color: rgb(248, 246, 246);
